@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Shmail_Messenger</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="browser.png" />
+    <None Remove="happy.png" />
+    <None Remove="microphone.png" />
+    <None Remove="send.png" />
+    <None Remove="whatsapp.png" />
+    <None Remove="WP.png" />
+    <None Remove="WpLight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\browser.png" />
+    <Resource Include="Icons\happy.png" />
+    <Resource Include="Icons\microphone.png" />
+    <Resource Include="Icons\send.png" />
+    <Resource Include="Icons\whatsapp.png" />
+    <Resource Include="Icons\WP.png" />
+    <Resource Include="Icons\WpLight.png" />
+  </ItemGroup>
+
+</Project>
