@@ -20,15 +20,13 @@ using Person = Shmail_Messenger.Models.Person;
 
 namespace Shmail_Messenger
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public List<Message> Messages { get; set; }
         Person FakePerson = new Faker<Person>().RuleFor(p => p.Name, faker => faker.Person.FullName).RuleFor(p => p.ImageUrl, faker => faker.Person.Avatar).RuleFor(p => p.Phone, faker => faker.Person.Phone);
 
-        public MainWindow()
+        public  MainWindow()
         {
             InitializeComponent();
 
@@ -43,7 +41,7 @@ namespace Shmail_Messenger
         {
             if (string.IsNullOrWhiteSpace(txtMessage.Text))
                 return;
-
+            
 
             listViewMessages.ItemsSource = null;
             Messages.Add(new Message("You", txtMessage.Text));

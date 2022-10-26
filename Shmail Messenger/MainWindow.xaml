@@ -73,7 +73,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
 
-                    <Grid>
+                    <Grid x:Name="Messagetxt">
 
                         <Grid.ColumnDefinitions>
 
@@ -81,8 +81,8 @@
                             <ColumnDefinition Width="*"/>
 
                         </Grid.ColumnDefinitions>
-                        
-                        <Border Name="BorderTxt" Background="Green" CornerRadius="12" Margin="0 15 0 0">
+
+                        <Border Name="BorderTxt" Background="#128c7e" CornerRadius="12" Margin="0 15 0 0">
                             
                             <StackPanel  Grid.Column="0" Background="Transparent" >
                             
